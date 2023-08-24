@@ -1,3 +1,4 @@
+**CHAPTER 1**
 1. 
 include <unistd.h>
 int main() {
@@ -39,3 +40,15 @@ int main(){
 }
 5. Printf() can be used to format the text using %d for integers but write() does not provide any formatting capabilities. Also, printf() writes to the console but 
 write() writes to the file. Lastly, printf() has a buffer. 
+
+**CHAPTER 2**
+1. There are at least 8 bits in one byte.
+2. Char is one byte or 8 bits. 
+3. Int has 4 bits; double has 8 bits; float has 4 bits; long has 4 bits; long long has 8 bits. 
+4. The address of (data+2) = 0x7fbd9d48.
+5. data + 3 is equal to data[3]
+6. Constants in the memory can only be read and not written to and that is why we get a segmentation fault. 
+7. sizeof("Hello\0World") returns 12.
+8. strlen("Hello\0World") return 5 because it stops counting as soon as it hits the ending \0.
+9. "Hi" would give sizeOf() as 3.
+10. sizeOf(1) could give 4 or 8 depending on the machine because it could be interpretted as an int or a double.
