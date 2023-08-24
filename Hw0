@@ -38,8 +38,8 @@ int main(){
 	dprintf(3, "Hi! My name is Anushka");
 	close(fildes);
 }
-5. Printf() can be used to format the text using %d for integers but write() does not provide any formatting capabilities. Also, printf() writes to the console but 
-write() writes to the file. Lastly, printf() has a buffer. 
+5. Printf() can be used to format the text using %d for integers but write() does not provide any formatting capabilities. Also, printf() writes to the 
+console but write() writes to the file. Lastly, printf() has a buffer. 
 
 **CHAPTER 2**
 1. There are at least 8 bits in one byte.
@@ -52,3 +52,15 @@ write() writes to the file. Lastly, printf() has a buffer.
 8. strlen("Hello\0World") return 5 because it stops counting as soon as it hits the ending \0.
 9. "Hi" would give sizeOf() as 3.
 10. sizeOf(1) could give 4 or 8 depending on the machine because it could be interpretted as an int or a double.
+
+**CHAPTER 3**
+1. The two ways to return the length of argv is (a) use argc, which is the first parameter of main function (b) using a while loop using a variable 
+count such as
+(argv[count] != NULL) {
+	count ++;
+} and then returning count. 
+2. The first entry is always the execution name of the program. 
+3. The environment variables are stored somewhere else.
+4. sizeOf(ptr) is 8 because it is a char pointer with 4 bits that is what will be returned. However for sizeOf(array) will return 6 because that is the
+length of the array + 1 for the extra null space at the end of the sentence. 
+5. Stack manages the lifetime of automatic variables. 
