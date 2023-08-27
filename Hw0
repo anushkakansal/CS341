@@ -64,3 +64,18 @@ count such as
 4. sizeOf(ptr) is 8 because it is a char pointer with 4 bits that is what will be returned. However for sizeOf(array) will return 6 because that is the
 length of the array + 1 for the extra null space at the end of the sentence. 
 5. Stack manages the lifetime of automatic variables. 
+
+**CHAPTER 4**
+1. We can use malloc() to manage the data's lifetime. This can be done using char* result = malloc(memory needed in bytes).
+2. Heap is used for dynamic memory location giving user the ability to allocate and deallocate the memory as needed, but stack is used for management of 
+function calls and local variables. Additionally, memory management in stack is automatic and is last in first out order but on heap it is manual. Data on
+stack is faster to access than heap.
+3. Yes, there is other kinds of memory in a process such as Text Segment, Initialized Data Segment and Uninitialized Data Segment.
+4. In a good C program, for every malloc, there is a free(). 
+5. malloc can fail if our program has used up all of the heap memory.
+6. For time() it returns a time_t but for ctime() it returns a pointer to a string. Lastly, time() is for getting the current time and ctime() is for 
+converting it to a string.
+7. The pointer was freed twice and was not set to NULL.
+8. Trying to access the pointer even though it has been freed.
+9. Free the pointer and then immediately set it to NULL.
+10. 
